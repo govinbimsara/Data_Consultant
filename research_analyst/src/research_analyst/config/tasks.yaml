@@ -1,0 +1,26 @@
+research_task:
+  description: >
+    Conduct a thorough research about {company}
+    Go thorough there website {website} and find all there products and offering to find AI, ML and GenAI applications and automations
+    Find out how other companies are using AI and ML for similar products and how they are doing it
+    the current year is {current_year}.
+  expected_output: >
+    A list with 15 AI applications and automations for {company}
+  agent: researcher
+
+reporting_task:
+  description: >
+    Analyse all the information provided and focus on:
+    1. AI usecase for the product
+    2. Application and execution 
+    3. Expected outcomes
+  expected_output: >
+    A markdown report with the fallowing structure:
+    1. Executive summary of a single paragraph
+    2. Create a comprehensive list of 15 AI use cases, prioritized by their potential business impact, detailing for each:
+    - The specific use case and its business context
+    - Technical implementation approach and execution strategy 
+    - Quantifiable expected outcomes and success metrics    
+    3. Reasons and supporting evidence that validate our analysis and conclusions  
+    Formatted as markdown without '```'
+  agent: reporting_analyst
